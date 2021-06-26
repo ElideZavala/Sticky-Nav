@@ -17,7 +17,55 @@ body {
 	margin: 0 auto;
 }
 
-/* @todo Nav */
+.nav {
+	position: fixed;
+	background-color: #222;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 15px;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+	background-color: #fff;
+}
+
+.nav.active a {
+	color: #000;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active .container {
+	padding: 10px 0;
+}
+
+.nav a.current, 
+.nav a:hover {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+}
 
 .hero {
 	/* background-image: linear-gradient(175deg, #ffffb3 0, #eeffb6 10%, #daffb8 20%, #c5ffba 30%, #b1ffba 40%, #9df2b9 50%, #8ce4b7 60%, #7dd8b5 70%, #71cdb4 80%, #68c4b3 90%, #60bdb3 100%); */
